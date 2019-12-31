@@ -1,0 +1,67 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Sefford's Blog
+email: sefford@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Random musings about development and other things.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://sefford.com # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: sefford
+github_username:  Sefford
+
+# Build settings
+markdown: kramdown
+remote_theme: hydecorp/hydejack
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-avatar
+
+# Paginate
+# Pagination configuration (used by the `blog` layout)
+paginate:              10
+paginate_path:         /page-:num/
+
+# file: _config.yml
+menu:
+  - title: About
+    url:   /about/
+
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © 2019. Saúl Díaz. All rights reserved. Side picture - Kioscos Chinescos de Aranjuez by Ángel Serrano Sánchez de León
+
+accent_image: /assets/sidebar-bg.jpg
+accent_color: rgb(0, 153, 204)
+
+author:
+  picture: /assets/avatar.png
+  name:  Saúl Díaz
+  email: sefford@gmail.com
+  about: |
+    Hi, I'm Saul Díaz @ Chicisimo...
+
+    This is another paragraph.
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
